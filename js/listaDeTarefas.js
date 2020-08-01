@@ -9,7 +9,17 @@ var familia = {"familia":"alves",
 var tarefa = {
     "nome": "estudar",
     "status": false
-}
-function novaTarefa(nome){
-
+} 
+var tarefas = [
+    {"nome": "lavar", "status":false},
+    {"nome":"passar","status":true},
+    {"nome":"limpar a casa","status":true},
+    {"nome":"lavar a louça","status":false},
+    {"nome": "estudar programaçao","status":true}
+]
+function acrescentar (nomeTarefa){
+    var novaTarefa = {
+        "nome":nomeTarefa,"status":false
+    }
+    tarefas.push(novaTarefa);
 }
