@@ -1,0 +1,30 @@
+.tarefa {
+    width: 30%;
+    height:20px;
+    border: black;
+    border-style: solid;
+    border-width:1px;
+}
+.texto{
+    width: 90%;
+    float:left;
+}
+.chek{
+    width: 10%;
+    float: right;
+}
+.novaTarefa{
+    width: 30%;
+    height:20px;
+    border: black;
+    border-style:double;
+    border-width:1px;
+}
+.novoTexto{
+    width: 85%;
+    float:left;
+}
+.botaoNova{
+    width: 15%;
+    float: right;
+}

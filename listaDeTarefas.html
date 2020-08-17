@@ -2,14 +2,43 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>lista</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/listaDeTarefas.css'>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='js/listaDeTarefas.js'></script>
+
+    <link rel='stylesheet' type='text/css'href='css/listaDeTarefas.css'>
+    
 </head>
 <body>
-    <input id="txtnome" type="text"/>
+    <div class="principal">
+        <div class="tarefa">
+            <div class = "texto"><label>tarefa1</label></div>
+            <div class = "chek"><input type="checkbox"></div>
+        </div>
+        <div class = "tarefa">
+            <div class = "texto"><label>tarefa2</label></div>
+            <div class = "chek"><input type="checkbox"></div>
+        </div>
+        <div class = "tarefa">
+           <div class = "texto"><label>tarefa3</label></div>
+           <div class = "chek"><input type="checkbox"></div>
+        </div>
+        <div class = "tarefa">
+            <div class = "texto"><label>tarefa4</label></div>
+            <div class = "chek"><input type="checkbox"></div>
+        </div>
+        <div class = "tarefa">
+            <div class = "texto"><label>tarefa5</label></div>
+            <div class = "chek"><input type="checkbox"></div>
+        </div>
+    </div>
+    <div class="novaTarefa">
+        <div class="novoTexto"><input type="text"></div>
+        <div class="botaoNovo"><button>+</button></div>
+    </div>
+  <!--  <input id="txtnome" type="text"/>
+    <input id="checkTeste" type="checkbox" />
+    <label>Limpar</label>-->
 </body>
 </html>
