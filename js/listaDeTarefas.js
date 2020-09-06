@@ -6,10 +6,6 @@
 var familia = {"familia":"alves",
 "integrantes":"fhelipe"}
 
-var tarefa = {
-    "nome": "estudar",
-    "status": false
-} 
 var tarefas = [
     {"nome": "lavar", "status":false},
     {"nome":"passar","status":true},
@@ -17,9 +13,25 @@ var tarefas = [
     {"nome":"lavar a louça","status":false},
     {"nome": "estudar programaçao","status":true}
 ]
-function acrescentar (nomeTarefa){
-    var novaTarefa = {
+
+function acrescentar (){
+    var nome = $("#texto").val();
+    acrescentarNovo(nome);
+}
+
+function acrescentarNovo (nomeTarefa){
+    var nova = {
         "nome":nomeTarefa,"status":false
     }
-    tarefas.push(novaTarefa);
+    tarefas.push(nova);
+    novaTarefa(nova);
+}
+
+
+function novaTarefa (tarefa){
+    console.log(tarefa);
+    var html = '<div class = "tarefa">'+
+        '<div class = "texto"><label>' + tarefa.nome + '</label></div>'+
+        '<div class = "chek"><input type="checkbox"></div>'+
+    '</div>'
 }
